@@ -1,0 +1,48 @@
+.content {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 40px 0;
+}
+
+.button {
+  background: #00b4ea;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.link {
+  color: #00b4ea;
+  margin-left: 20px;
+}
+
+.green-snackbar {
+  background: green;
+}
+
+.red-snackbar {
+  background: red;
+  color: black;
+}
+
+.progress-spinner {
+  min-height: 30px;
+  min-width: 30px;
+}
+.spinner-container {
+  height: 100%;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.pointer{
+  cursor: pointer;
+}

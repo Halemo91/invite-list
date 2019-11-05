@@ -1,0 +1,21 @@
+.mycontainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+mat-toolbar-row,.sideNavBackground {
+    background-color: #ffffff;
+  }
+  mat-toolbar-row:hover {
+    cursor: pointer;
+  }
+  .matToolbarHeader{
+    background-color: #ffffff;
+}
+  .activeBar{
+    background-color: #00b4ea;
+  }
+  

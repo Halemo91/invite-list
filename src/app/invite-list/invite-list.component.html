@@ -1,0 +1,20 @@
+<div *ngIf="loading" layout vertical center-center fit class="spinner-container progress-spinner">
+    <mat-progress-spinner [color]="'primary'" [mode]="'indeterminate'" [diameter]="20">
+    </mat-progress-spinner>
+</div>
+<div class="user-container">
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of (users$ | async)">
+      <td>{{ user.id }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

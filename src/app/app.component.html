@@ -1,0 +1,44 @@
+
+<!-- <app-header [title]="title">
+  </app-header>
+<div class="content">
+ 
+    <div class="nav">
+        <a class="link" [routerLink]="['/']">List</a>
+        <a class="link" [routerLink]="['/invite']">Invite</a>
+    </div>
+  <router-outlet></router-outlet>
+</div> -->
+
+<div >
+    <mat-sidenav-container class="mycontainer">
+  
+      <mat-sidenav #sidenav mode="over" [(opened)]="open" class="sideNavBackground ">
+  
+        <mat-toolbar-row (click)="toggleMenu()">
+          <mat-icon>menu</mat-icon>
+        </mat-toolbar-row>
+        <mat-toolbar>
+          <mat-toolbar-row (click)="goToUrl('list');toggleMenu()"  [class.activeBar]="currentURL && currentURL.includes('list')">
+            User lists
+          </mat-toolbar-row>
+  
+          <mat-toolbar-row (click)="goToUrl('invite');toggleMenu()" [class.activeBar]="currentURL && currentURL.includes('invite')">
+            Invite
+          </mat-toolbar-row>
+        </mat-toolbar>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <mat-toolbar class="matToolbarHeader mat-elevation-z8">
+          <mat-icon (click)="toggleMenu()" class="pointer">menu</mat-icon>
+          <app-header [title]="title">
+            </app-header>
+  
+        </mat-toolbar>
+  
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+  
+    </mat-sidenav-container>
+  </div>
