@@ -1,4 +1,8 @@
   
+  
   <div class="invite-container">
-  <button class="button" (click)="onSubmit()">Invite</button>
-</div>
+  <div *ngIf="myInivited > 0">
+    All users are already invited
+  </div>
+  <button  [disabled]="myInivited > 0" class="button" (click)="onSubmit()">Invite</button>
+  </div>

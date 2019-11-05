@@ -22,7 +22,6 @@ export class AppComponent implements OnInit {
     // to get the current url
     this.router.events.subscribe(event => {
       this.currentURL = this.location.path();
-      console.log(this.currentURL)
     });
   }
    /**
